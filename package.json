@@ -1,0 +1,16 @@
+{
+  "name": "brainfuck-kl",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/index.js",
+  "scripts": {
+    "build": "kl-compiler-in-kl --path ./src --output ./build",
+    "start": "node ./build/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "kl-compiler-in-kl": "github:mathkruger/kl-compiler-in-kl"
+  }
+}
