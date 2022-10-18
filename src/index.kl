@@ -1,11 +1,16 @@
+SABADAÇO MOSTRAE ABRE RESULTADO FECHA
+BOA NOITE
+    document->querySelector ABRE "#result" FECHA->innerHTML É RESULTADO;
+BOA TARDE
+
 SABADAÇO COMPILAE ABRE PROGRAMAÇO FECHA
 BOA NOITE
-
     KASINAE TAPE É Array ABRE 100 FECHA->fill ABRE 0 FECHA;
     KASINAE PTR É 0;
     KASINAE ISLOOPING É FALSO;
     KASINAE LOOPSTACK É [];
     KASINAE INNERLOOPS É 0;
+    KASINAE RESULTADAÇO É "";
 
     AS BALADAS ABRE KASINAE I É 0; I MENOR PROGRAMAÇO->length; I++ FECHA
     BOA NOITE
@@ -34,8 +39,12 @@ BOA NOITE
                 TAPE[PTR]--;
             OVER;
 
+            GET ",":
+                TAPE[PTR] É prompt ABRE FECHA[0]->charCodeAt ABRE FECHA;
+            OVER;
+
             GET ".":
-                CHAMA VAIDJ ABRE String->fromCharCode ABRE TAPE[PTR] FECHA FECHA;
+                RESULTADAÇO SOMAEÉ String->fromCharCode ABRE TAPE[PTR] FECHA;
             OVER;
 
             GET ">":
@@ -64,30 +73,17 @@ BOA NOITE
                 VAI;
             OVER;
         BOA TARDE
-
     BOA TARDE
+
+    CHAMA MOSTRAE ABRE RESULTADAÇO FECHA;
 BOA TARDE
 
-COMPILAE ABRE
-    `.++>+>++>>+>>>++++++++++[->+>+>++++++++++<<<]>>>>++++++++++[->+++++>++++++++++>+
-++++++++++>++++++++>++++++++>+++>++++>+<<<<<<<<]+>->+++>++++++>->+++++>+++>+++++
->+>+>+>+>++>+>+>++[-<]<<<<<<<[->>[>>>>>>>>[<<<<<<<[->[-]>>>>>>>>>>>.<----.>>>.<<
-<--.++.+++.+<-.+<<+<<<<<<<<]+>[-<[-]>>>>>[>>>+<<<<+<+<+>>>-]<<<[->>>+<<<]>[>>>>>
->+<<<<<<-]>>>>>[[-]>.<]<<<<[>>>>>-<<<<<-]>>[<<+<+<+>>>>-]<<<<[->>>>+<<<<]>[>>>>>
->+<<<<<<-]>>>>>>.<<<<<[>>>>>-<<<<<-]>>>[-<<<+<+>>>>]<<<<[->>>>+<<<<]>-[[-]>>>>+<
-<<<]<<<]+>>>>>>>>>>>>>.<<<<----.>----.+++++..-<++++++++++.-------.<<[[-]>>>.<<<]
->>>>>>.<<<----.<+.>>>>.<<<<----.+++..+>+++.+[>]+>+>[->+<<-<-<<<.<<<----.-.>>>.<<
-<++++++.<++.---.>>>>.<<<+++.<----.+++++++++++..------>---->---------------------
------------>>>++.-->..>>>]>>>[->[-]<<<<<<<[<]<[-]>>[>]>>>>>]+>[-<[-]<<<<[->>[->+
-<<<<-<<<.<<<----.-.>>>.<<<++++++.<++.---.>>>>.<<<+++.<----.+++++++++++..------>-
---->++++++++++++++++++++++++++++++++>>>.<.>>>>>>]<<]<[->>>>[-<<+<<<<++.-->.[<]<<
-<<<<<<[->[-]<]+>[-<[-]>>>>>>>>>>>>>.<<<-----.++++++++++.------.>>>>.<<<----.-.<.
->>>>.<<<<-.>+.++++++++.---------.>>>.<<<<---.>.<+++.>>>>.<<<++.<---.>+++..>>>.<<
-<<++++++++.>+.>>>.<<<<--------.>--.---.++++++.-------.<+++.++>+++++>>>>.<.[<]<<<
-<<<<]+>>>>>>-<<<+>>[<<[-]<+<+>>>>-]<<<<[>-<[-]]>[->>>+<<<]>[->->+++++++++<<]>>>>
->[>]>>>>]<<<<]>>>>>>]+<<<<<<<[<]<]+<+<<<<<<+<-]>>>>>>>>>>[>]>>>>>[->[-]<]+>[-<[-
-]<<<<<<<<<-------------.<<----.>>>.<<<+++++.-----.>>>.<<<+++++.<++.---.>>>>.<<<-
-.+.-----.+++.<.>>>>.<<<<----.>----.<+++.>>>>.<<<<--.>+++++++.++++.>>>.<<<------.
-----.--.<+++.>>>>.<<<.++.+++.+<.+>>>>>.<.>>>>>>>>>]+<[-]+<[-]<[-]<[-]+<<<[<]<[-]
-<[-]<[-]<[-]++++++++++[->+>+>++++++++++<<<]>->->-<<<<<<[-]+<[-]<+<<]`
-FECHA
+KASINAO CODIGAÇO = document->querySelector ABRE "#code" FECHA;
+KASINAO BOTAO = document->querySelector ABRE "#compile" FECHA
+
+BOTAO->addEventListener ABRE "click", event GILBARROWS
+BOA NOITE
+    document->querySelector ABRE "#result" FECHA->innerHTML É "";
+
+    CHAMA COMPILAE ABRE CODIGAÇO->value FECHA
+BOA TARDE FECHA

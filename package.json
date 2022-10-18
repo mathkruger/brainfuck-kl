@@ -5,7 +5,7 @@
   "main": "./src/index.js",
   "scripts": {
     "build": "kl-compiler-in-kl --path ./src --output ./build",
-    "start": "node ./build/index.js"
+    "start": "serve ./build"
   },
   "keywords": [],
   "author": "",
