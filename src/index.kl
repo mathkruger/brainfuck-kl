@@ -1,6 +1,7 @@
 SABADAÇO MOSTRAE ABRE RESULTADO FECHA
 BOA NOITE
     document->querySelector ABRE "#result" FECHA->innerHTML É RESULTADO;
+
 BOA TARDE
 
 SABADAÇO COMPILAE ABRE PROGRAMAÇO FECHA
@@ -70,6 +71,7 @@ BOA NOITE
             OVER;
 
             BABY:
+                VAIDJ ABRE "HEY" FECHA;
                 VAI;
             OVER;
         BOA TARDE
